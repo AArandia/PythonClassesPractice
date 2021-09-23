@@ -27,6 +27,7 @@ class scifi(tvShow):
     def info(self):
         return super().info()+"\nFranchise: "+self.franchise
 
+
 class isekai(anime):
     def __init__(self, title, episodeCount, year, animationStudio, arrivalMethod):
         self.arrivalMethod = arrivalMethod
@@ -34,6 +35,7 @@ class isekai(anime):
     
     def info(self):
         return super().info()+"\nIsekai Arrival Method: "+self.arrivalMethod
+
 
 class drama(tvShow):
     def __init__(self, title, episodeCount, year, episodeLengthAvg):
