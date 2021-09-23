@@ -1,3 +1,5 @@
+import datetime
+
 class tvShow:
     def __init__(self, title, episodeCount, year):
         self.title = title
@@ -32,6 +34,15 @@ class isekai(anime):
     
     def info(self):
         return super().info()+"\nIsekai Arrival Method: "+self.arrivalMethod
+
+class drama(tvShow):
+    def __init__(self, title, episodeCount, year, episodeLengthAvg):
+        self.episodeLengthAvg = episodeLengthAvg
+        super().__init__(title, episodeCount, year)
+    
+    @property
+    def fullViewingTime(self):
+        return str(datetime.timedelta(minutes = (self.episodeLengthAvg * self.episodeCount)))
 
 
 
