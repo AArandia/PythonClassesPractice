@@ -14,5 +14,6 @@ def main():
     print(("*"*8)+"Multi Inheritance using super()"+("*"*8))
     visions = scifiAnime(title="Star Wars: Visions", episodeCount=9, year=2021, franchise="Star Wars", animationStudio="Qubic Pictures")
     print(visions.info())
+    
 
 main()
